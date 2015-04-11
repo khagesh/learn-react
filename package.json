@@ -9,9 +9,15 @@
   "author": "Khagesh Sharma",
   "license": "ISC",
   "dependencies": {
-    "http-server": "^0.8.0"
+    "http-server": "^0.8.0",
+    "jsx-loader": "^0.12.2",
+    "react": "^0.13.1",
+    "webpack": "^1.7.3",
+    "webpack-dev-server": "^1.7.0"
   },
   "devDependencies": {
-    "gulp": "^3.8.11"
+    "gulp": "^3.8.11",
+    "gulp-babel": "^4.0.1",
+    "gulp-ext-replace": "^0.1.0"
   }
 }
