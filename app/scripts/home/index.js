@@ -1,5 +1,8 @@
-/**
- * Created by Khagesh.Sharma on 4/7/2015.
- */
-import { Hello } from 'HelloWorld'
-React.create(<Hello name="ES 6 loader" />, document.querySelector(".hello-2"));
+"use strict";
+
+var React = require("react");
+var Hello = require("./Hello");
+var PricingTemplate1 = require("./PricingTemplate1");
+var PricingTemplate1Container = require("./PricingTemplate1Container");
+
+React.render(React.createElement(PricingTemplate1Container, null), document.getElementById("react-container"));

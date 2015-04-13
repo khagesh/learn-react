@@ -30,7 +30,7 @@ gulp.task('browserify-jsx', function () {
 // Watcher task
 gulp.task('watch',function() {
    gulp.watch('app/**/*.jsx', ['browserify-jsx']);
-   gulp.watch('app/styles/*.less', ['styles']);
+   gulp.watch(['app/styles/*.less', 'app/styles/**/*.less'], ['styles']);
 });
 
 // Default task

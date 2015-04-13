@@ -1,76 +1,21 @@
 <!doctype html>
 <html>
     <head>
-        <title>Learn basics of react</title>
+        <title>UniComparer</title>
+        <link rel="stylesheet" type="text/css" href="app/styles/main.css">
+
+        <!-- include react -->
+        <script src="./node_modules/react/dist/react-with-addons.js"></script>
     </head>
     <body>
         <div id="react-container"></div>
-        <div class="react-list"></div>
-        <div class="hello-2"></div>
-        <script type="text/javascript" src="lib/react.min.js"></script>
-        <script type="text/javascript" src="lib/react.add-ons.min.js"></script>
-        <script type="text/javascript" src="lib/JSXTransformer.min.js"></script>
-        <script type="text/jsx" src="app/scripts/HelloWorld.js"></script>
-        <script type="text/jsx">
-            /** @jsx React.DOM */
-            var List = React.createClass({
-                render: function () {
-                    return (
-                            <ul>
-                            {
-                                    this.props.items.map(function(item){
-                                        return (<li key={item.key}>{item.name}</li>)
-                                    })
-                                    }
-                            </ul>
-                    );
-                }
-            });
 
-            var FilteredList = React.createClass({
-                getInitialState: function () {
-                    return {
-                        initialItems:[
-                            {name: 'Apple', key: 1 },
-                            {name: 'React', key: 2 },
-                            {name: 'Peach', key: 3 },
-                            {name: 'Strawberry', key: 4 },
-                            {name: 'Banana', key: 4 },
-                            {name: 'Orange', key: 5 }
-                        ],
-                        items: []
-                    }
-                },
-                filterList: function (event) {
-                    var initialItems = this.state.initialItems;
-                    var filteredItems = initialItems.filter(function (item) {
-                       return item.name
-                                       .toLowerCase()
-                                       .search(event.target.value.toLowerCase()) !== -1
-                    });
-                    console.log(filteredItems);
-                    this.setState({items: filteredItems});
-                },
-                componentWillMount: function () {
-                  this.setState({items: this.state.initialItems});
-                },
-                componentWillUnmount: function () {
-                  alert("Are you sure want to move away?");
-                },
-                render: function () {
-                    return (
-                            <div className="filter-list">
-                                    <input type="text" name="fruitName" onChange={this.filterList} />
-                                    <List items={this.state.items} />
-                            </div>
-                    );
-                }
-            });
+        <!-- include the webpack-dev-server script so our scripts get reloaded when we make a change -->
+        <!-- we'll run the webpack dev server on port 8090, so make sure it is correct -->
+        <script src="http://localhost:8090/webpack-dev-server.js"></script>
+        <!-- include the bundle that contains all our scripts, produced by webpack -->
+        <!-- the bundle is served by the webpack-dev-server, so serve it also from localhost:8090 -->
+        <script type="text/javascript" src="http://localhost:8090/assets/bundle.js"></script>
 
-            React.render(<FilteredList />, document.querySelector(".react-list"));
-        </script>
-        <script type="text/jsx">
-            React.render(<Hello name="World" />, document.querySelector("#react-container"));
-        </script>
     </body>
 </html>
