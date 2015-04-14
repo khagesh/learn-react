@@ -15,7 +15,7 @@ var PricingTemplate1Container = React.createClass({
 
 		return React.createElement(
 			"div",
-			null,
+			{ className: "template-container" },
 			templates
 		);
 	}

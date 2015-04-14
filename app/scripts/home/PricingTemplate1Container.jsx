@@ -11,7 +11,7 @@ var PricingTemplate1Container = React.createClass({
 			templates.push(<PricingTemplate1 />);
 		}
 
-		return <div>{templates}</div>
+		return <div className="template-container">{templates}</div>
 	}
 });
 

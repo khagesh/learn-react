@@ -11,8 +11,8 @@ var PricingTemplate1 = React.createClass({
 												{ className: "template-1" },
 												React.createElement(
 																"div",
-																{ className: "template-1-header" },
-																"Text"
+																{ className: "vertical-align-middle template-1-header" },
+																" AWS "
 												),
 												React.createElement(
 																"div",
@@ -22,35 +22,40 @@ var PricingTemplate1 = React.createClass({
 																				{ className: "template-1-list" },
 																				React.createElement(
 																								"li",
-																								{ className: "template-1-list-item-odd" },
+																								{ className: "vertical-align-middle template-1-list-item-odd" },
 																								" 10 GB User Space "
 																				),
 																				React.createElement(
 																								"li",
-																								{ className: "template-1-list-item-even" },
+																								{ className: "vertical-align-middle template-1-list-item-even" },
 																								" ParaVirtualisation "
 																				),
 																				React.createElement(
 																								"li",
-																								{ className: "template-1-list-item-odd" },
+																								{ className: "vertical-align-middle template-1-list-item-odd" },
 																								" VMWare Space "
 																				),
 																				React.createElement(
 																								"li",
-																								{ className: "template-1-list-item-even" },
+																								{ className: "vertical-align-middle template-1-list-item-even" },
 																								" nGinx Loaders "
 																				),
 																				React.createElement(
 																								"li",
-																								{ className: "template-1-list-item-odd" },
+																								{ className: "vertical-align-middle template-1-list-item-odd" },
 																								" Limited Online Support "
 																				)
 																)
 												),
 												React.createElement(
 																"div",
-																{ className: "template-1-footer" },
-																" Bottom content "
+																{ className: "vertical-align-middle template-1-footer" },
+																"Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+																React.createElement(
+																				"div",
+																				{ className: "content" },
+																				" Team "
+																)
 												)
 								);
 				}

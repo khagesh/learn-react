@@ -8,17 +8,20 @@ var PricingTemplate1 = React.createClass({
     	var templateClass = "template-1";
         return (
         	<div className="template-1">
-	            <div className="template-1-header">Text</div>
+	            <div className="vertical-align-middle template-1-header"> AWS </div>
 	        	<div className="template-1-content">	
 	        		<ul className="template-1-list">
-	        			<li className="template-1-list-item-odd"> 10 GB User Space </li>
-	        			<li className="template-1-list-item-even"> ParaVirtualisation </li>
-	        			<li className="template-1-list-item-odd"> VMWare Space </li>
-	        			<li className="template-1-list-item-even"> nGinx Loaders </li>
-	        			<li className="template-1-list-item-odd"> Limited Online Support </li>
+	        			<li className="vertical-align-middle template-1-list-item-odd"> 10 GB User Space </li>
+	        			<li className="vertical-align-middle template-1-list-item-even"> ParaVirtualisation </li>
+	        			<li className="vertical-align-middle template-1-list-item-odd"> VMWare Space </li>
+	        			<li className="vertical-align-middle template-1-list-item-even"> nGinx Loaders </li>
+	        			<li className="vertical-align-middle template-1-list-item-odd"> Limited Online Support </li>
 	        		</ul>
 	        	</div>
-	        	<div className="template-1-footer"> Bottom content </div>
+	        	<div className="vertical-align-middle template-1-footer"> 
+	        		Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+	        		<div className="content"> Team </div>
+        		</div>
         	</div>
         )
     }
