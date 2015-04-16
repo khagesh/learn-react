@@ -28,6 +28,7 @@
     "webpack": "^1.8.4",
     "gulp-ext-replace": "^0.1.0",
     "gulp-less": "^3.0.2",
-    "gulp-minify-css": "^1.0.0"
+    "gulp-minify-css": "^1.0.0",
+    "lesshat": "^3.0.2"
   }
 }

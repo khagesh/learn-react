@@ -1,1 +1,97 @@
-/*Import partials*/
+/*Import colors*/
+/* Import global styles */
+* {
+  box-sizing: border-box;
+  color: #ffffff !important;
+}
+@font-face {
+  font-family: Verdana;
+  src: url('fonts/Verdana.ttf');
+}
+.vertical-align-middle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*TODO: Move it to specific template container file*/
+.template-container {
+  margin: 20px;
+}
+/* Import templates */
+.template-1 {
+  width: 250px;
+  max-height: 625px;
+  border: 1px solid #b2b2b2 !important;
+  box-shadow: 0;
+  font-family: Verdana;
+  text-align: center;
+  float: left;
+  -webkit-transition: box-shadow 0.25s;
+          transition: box-shadow 0.25s;
+  margin: 0 10px;
+}
+.template-1:last-child {
+  margin-right: 0;
+}
+.template-1:first-child {
+  margin-left: 0;
+}
+.template-1:hover {
+  box-shadow: 0 0 15px 0 #8e8e8e !important;
+}
+.template-1:hover .template-1-header {
+  background-color: #fb4760 !important;
+}
+.template-1:hover .template-1-list .template-1-list-item-even {
+  color: #fb4760 !important;
+}
+.template-1 .template-1-header {
+  background-color: #23404c !important;
+  height: 150px;
+  max-height: 150px;
+  font-size: 3em;
+  font-size: bold;
+}
+.template-1 .template-1-content {
+  height: 250px;
+  max-height: 250px;
+}
+.template-1 .template-1-list {
+  max-height: 300px;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+}
+.template-1 .template-1-list li {
+  list-style: none;
+  width: 100%;
+  height: 35px;
+  max-height: 35px;
+  color: #23404c !important;
+  font-size: 16px;
+}
+.template-1 .template-1-list .template-1-list-item-even {
+  background-color: #ffffff !important;
+}
+.template-1 .template-1-list .template-1-list-item-odd {
+  background-color: #ececec !important;
+}
+.template-1 .template-1-footer {
+  background-color: #ffffff !important;
+  height: 100px;
+  max-height: 100px;
+  padding-bottom: 10px;
+}
+.template-1 .template-1-footer span {
+  color: #23404c !important;
+}

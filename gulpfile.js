@@ -35,6 +35,7 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('app/styles'));
 });
 
+// Watcher task
 gulp.task('watch', function(){
     watch(["app/**/*.js", "examples/**/*.html", 'app/styles/*.less'], function () {
         gulp.start('clean');
