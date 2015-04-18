@@ -1,7 +1,7 @@
-"use strict";
+'use strict'
 
-var React = require("react");
-var PricingTemplate1 = require("./PricingTemplate1");
-var PricingTemplate1Container = require("./PricingTemplate1Container");
+import React from 'react';
+import { PricingTemplate } from '../../components/PricingTemplate';
+import { PricingTemplateContainer } from '../../components/PricingTemplateContainer';
 
-React.render(React.createElement(PricingTemplate1Container, null), document.getElementById("react-container"));
+React.render(<PricingTemplateContainer />, document.querySelector('.react-container')); 

@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  color: #fff;
+}
+@font-face {
+  font-family: Verdana;
+  src: url('../../../../fonts/Verdana.ttf');
+}
+.vertical-align-middle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.template-container {
+  margin: 20px;
+}
+/*Template styles */
+/*Template hover styles*/
+/*Template header*/
+/*Template content*/
+/*Template list*/
+/*Template list item*/
+/*Template footer*/
+.template {
+  width: 250px;
+  max-height: 625px;
+  border: 1px solid #b2b2b2 !important;
+  box-shadow: 0;
+  font-family: Verdana;
+  text-align: center;
+  float: left;
+  -webkit-transition: box-shadow 0.25s;
+          transition: box-shadow 0.25s;
+  margin: 0 10px;
+}
+.template:last-child {
+  margin-right: 0;
+}
+.template:first-child {
+  margin-left: 0;
+}
+.template:hover {
+  box-shadow: 0 0 15px 0 #8e8e8e !important;
+}
+.template:hover .template-header {
+  background-color: #fd6e0e !important;
+}
+.template:hover .template-list .template-list-item-even {
+  color: #fd6e0e !important;
+}
+.template .template-header {
+  background-color: #fdd016 !important;
+  height: 150px;
+  max-height: 150px;
+  font-size: 3em;
+  font-weight: bold;
+}
+.template .template-content {
+  height: 250px;
+  max-height: 250px;
+}
+.template .template-list {
+  max-height: 300px;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+}
+.template .template-list li {
+  list-style: none;
+  width: 100%;
+  height: 35px;
+  max-height: 35px;
+  color: #23404c !important;
+  font-size: 16px;
+}
+.template .template-list .template-list-item-even {
+  background-color: #ffffff !important;
+}
+.template .template-list .template-list-item-odd {
+  background-color: #ececec !important;
+}
+.template .template-footer {
+  background-color: #ffffff !important;
+  height: 100px;
+  max-height: 100px;
+  padding-bottom: 10px;
+}
+.template .template-footer span {
+  color: #23404c !important;
+}

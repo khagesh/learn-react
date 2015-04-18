@@ -1,0 +1,80 @@
+.template{
+	width: @template-width;
+	max-height: @template-height;
+	border: @template-border;
+    box-shadow: @template-box-shadow-deault;
+	font-family: @template-font-family;
+	text-align: @template-text-align;
+	float: @template-float;
+    transition: @template-transition;
+	margin: @template-margin;
+
+	&:last-child{
+		margin-right: @template-last-child-margin;
+	}
+	&:first-child{
+		margin-left: @template-first-child-margin;
+	}
+
+	&:hover{
+    	box-shadow: @template-box-shadow-hover;
+
+    	.template-header{
+			background-color: @template-header-hover;
+		}
+
+		.template-list{
+			.template-list-item-even{
+				color: @template-list-item-even-hover;
+			}
+		}
+	}
+
+	.template-header{
+		background-color: @template-header-bgcolor;
+		height: @template-header-height;
+		max-height: @template-header-maxheight;
+		font-size: @template-header-fontsize;
+		font-weight: @template-header-font-weight;
+	}
+
+	.template-content{
+		height: @template-content-height;
+		max-height: @template-content-maxheight;
+	}
+
+	.template-list{
+		max-height: @template-list-maxheight;
+		height: @template-list-height;
+		padding: @template-list-padding;
+		margin: @template-list-margin;
+
+		li{
+			list-style: @template-list-item-liststyle;
+			width: @template-list-item-width;
+			height: @template-list-item-height;
+			max-height: @template-list-item-maxheight;
+			color: @template-list-item-color;
+			font-size: @template-list-item-fontsize;
+		}
+
+		.template-list-item-even{
+			background-color: @template-list-item-even-color;
+		}
+
+		.template-list-item-odd{
+			background-color: @template-list-item-odd-color;
+		}
+	}
+
+	.template-footer{
+		background-color: @template-footer-bgcolor;
+		height: @template-footer-height;
+		max-height: @template-footer-maxheight;
+		padding-bottom: @template-footer-paddingbottom;
+
+		span{
+			color: @template-footer-text-color;
+		}
+	}
+}

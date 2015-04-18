@@ -6,7 +6,7 @@ var webpack = require('webpack');
 module.exports = {
     context: __dirname + '/dist',
     entry: {
-        app: './Home/index.js'
+        app: './scripts/home/index.js'
     },
     output: {
         path: __dirname + '/build',
