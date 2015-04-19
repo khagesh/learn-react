@@ -26,4 +26,4 @@ const PricingTemplate = React.createClass({
     }
 });
 
-export { PricingTemplate }
+export { PricingTemplate } ;

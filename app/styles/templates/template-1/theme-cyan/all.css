@@ -21,8 +21,15 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+.scrollable-container {
+  overflow-x: scroll;
+  width: 1060;
+  height: 530px;
+  overflow-y: hidden;
+}
 .template-container {
   margin: 20px;
+  width: 10000px;
 }
 /*Template styles */
 /*Template hover styles*/
@@ -33,7 +40,7 @@
 /*Template footer*/
 .template {
   width: 250px;
-  max-height: 625px;
+  height: 510px;
   border: 1px solid #b2b2b2 !important;
   box-shadow: 0;
   font-family: Verdana;
